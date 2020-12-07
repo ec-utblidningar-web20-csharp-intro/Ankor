@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Björn Bergqvist">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title> Min sida </title>
 </head>
 <body>
+    <div class="content">
     <header>
         <h1>
-            En webbsida om badankor och andra ankor
+            Min webbplats
         </h1>
     </header>
     <nav id="MainNav">
         <ul>
-            <li><a href="index.html">HTML exempel</a></li>
-            <li><a href="AboutMe.html">CSS exempel</a></li>
+            <li><a href="index.html"> Start </a></li>
+            <li><a href="ankor.html"> Om ankor </a></li>
+            <li><a href="contact.html"> Kontakt </a></li>
             <li><a href="https://bbjorn.github.io/" target="_blank">Min portfolio</a></li>
             <li><a href="https://codic.se/codic-education" target="_blank">Codic Education</a></li>
         </ul>
         <div class="clr"></div>
     </nav>
-    <div class="contents">
+    <section>
+        <!-- ! Beskriv skillnaden mellan de sematiska elementen section och article här -->
         <article>
             <h2>Badankor</h2>
-            <img id="RubberDuckImg" src="img/RubberDuck.jpg">
+            <img id="RubberDuckImg" class="fRight imgFlip" src="img/RubberDuck.jpg" alt="">
             <p>badanka är en leksak eller dekoration som är formad som en anka. Materialet är gummi eller något gummiliknande material, vanligen vinylplast.</p>
             <p>Badankor är vanligen gjorda för att lekas med vid bad. De är då ofta gjorda så att leksaken producerar ett enkelt pipande ljud om man klämmer till. På dyrare modeller kan ljudet istället vara ett genuint kvackande ljud precis som en riktig anka. Badankor kan ofta ha hål i näbben så att man genom att klämma på den kan få ankan att spruta vatten. De är normalt konstruerade så att de flyter när de hamnar i vattnet.</p>
             <p>Det är inte känt vem som skapade den första badankan men det är troligt att detta skedde i slutet av 1800-talet när andra leksaker i gummi började produceras. Inom populärkulturen har figuren Ernie i TV-programmet Sesam gjort gummiankan känd, särskilt med sången Rubber Duckie.</p>
@@ -32,19 +38,20 @@
         </article>
         <article>
             <h2>Andra Ankor</h2>
-            <img id="DuckImg" src="img/Amerikanische_Pekingenten_2013_01b.jpg">
+            <img id="DuckImg" class="fLeft" src="img/Amerikanische_Pekingenten_2013_01b.jpg" alt="">
             <p>Ankor är den domesticerade formen av gräsänder. Ett undantag är den tama myskankan som härstammar från den vilda myskanden. Ankor föds upp för köttets eller äggens skull. Hanen kallas andrake, drake, andrik eller ankbonde, honan oftast bara anka och ungarna ankungar eller ällingar. Ankor har platta simfötter. Ankor har oftast en orange näbb. Näbben är utvecklad för att kunna söka föda under vatten en kortare stund (en anka kan hålla sig under vatten i upp till 5 minuter).</p>
             <div class="clr"></div>
         </article>
         <article>
             <h2>Badankor och debugging</h2>
-            <img id="CyberDuckImg" src="img/Cyberduck.png">
+            <img id="CyberDuckImg" class="fRight imgFlip" src="img/Cyberduck.png" alt="">
             <p>Felsökning i kod med hjälp av gummianka (en: Rubber duck debugging) är en metod för att felsöka kod. Namnet är en referens till boken The Pragmatic Programmer, där en programmerare ofta bär runt på en gummianka och felsöker sin kod genom att tvinga sig själv att förklara den, rad för rad, för ankan. Denna teknik har många andra namn som inbegriper olika livlösa objekt.</p>
             <p>Många programmerare har upplevt att när de förklarat sin kod för någon annan, till och med någon som inte kan något om programmering, har de själva upptäckt problem i koden. När de beskrivit vad koden ska göra, och observerat vad den egentligen gör, uppenbarar sig problemen.</p>
             <p>I allmänhet kan det också fungera bra att beskriva ett ämne man själv är välbekant med för någon annan för att se på ämnet ur ett annat perspektiv, vilket i sin tur kan skapa en djupare förståelse. Genom att använda ett livlöst objekt kan programmeraren uppnå en djupare förståelse för eventuella problem i koden utan att behöva störa någon annan.</p>
             <div class="clr"></div>
         </article>
+    </section>
     </div>
-    <footer><p>All text är tagen direkt ifrån Wikipedia, bilderna kommer antigne ifrån mig eller ifrån wikipedia. </p></footer>
+    <footer><p> Mycket text och bilder är taget ifrån wikipedia, resten är &copy; Björn Bergqvist </p></footer>
 </body>
 </html>

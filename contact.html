@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Björn Bergqvist">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title> Min sida </title>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>
+                Min webbplats
+            </h1>
+        </header>
+        <nav id="MainNav">
+            <ul>
+                <li><a href="index.html"> Start </a></li>
+                <li><a href="ankor.html"> Om ankor </a></li>
+                <li><a href="contact.html"> Kontakt </a></li>
+                <li><a href="https://bbjorn.github.io/" target="_blank">Min portfolio</a></li>
+                <li><a href="https://codic.se/codic-education" target="_blank">Codic Education</a></li>
+            </ul>
+            <div class="clr"></div>
+        </nav>
+        <section>
+            <div class="info">
+                <h2> Du kan kontakta mig på följande vis:</h2>
+                <!-- ! Skriv en kommentar strukturen för table och dess underelement (tr, th och td) -->
+                <table>
+                    <!-- ! Skriv en kommentar om elementen thead och tbody -->
+                    <thead>
+                      <tr>
+                        <th colspan="2" >Kontaktinfo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="infoLeft"> Email: </td>
+                            <!-- ! Beskriv skillnaderna på de tre olika typerna av a element här. -->
+                            <td class="infoRight"> <a href="mailto:bjorn.bergquist@codic.se">bjorn.bergquist@codic.se</a>  </td>
+                        </tr>
+                        <tr>
+                            <td class="infoLeft"> Telefon: </td>
+                            <td class="infoRight"> <a href="tel:+467309228322">0730 - 922 83 22</a> </td>
+                        </tr>
+                        <tr>
+                            <td class="infoLeft"> Portfolio: </td>
+                            <td class="infoRight"> <a href="http://bbjorn.github.io/portfolio/" target="_blank"> React portfolio </a> </td>
+                        </tr>
+                        <tr>
+                            <td class="infoLeft"> LinkedIn: </td>
+                            <td class="infoRight"> <a href="https://www.linkedin.com/in/bjrn-bergquist/" target="_blank">bjrn-bergquist</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="contact">
+                <h2> Eller skriv till mig direkt här! </h2>
+                <!-- ! Beskriv övergripande hur form-elementet fungerar -->
+                <form action="mailto:bjorn.bergquist@codic.se" method="post" enctype="text/plain">
+                    <!-- ! Beskriv hur label är länkat till andra element -->
+                    <label for="subject">Ämne:</label><br>
+                    <!-- ! Beskriv select och option här -->
+                    <select id="subject" name="subject">
+                        <option value="rubberducks">Badankor</option>
+                        <option value="ducks">Andra ankor</option>
+                        <option value="rubberduckdebugging">Badankor och debugging</option>
+                        <option value="misc">Övrigt</option>
+                    </select>
+
+                    <!-- ! Beskriv vad input-elementet gör här -->
+                    <label for="contactFirstname">Förnamn: </label><br>
+                    <input type="text" id="contactFirstname">
+
+                    <label for="contactSurname">Efternamn: </label><br>
+                    <input type="text" id="contactSurame">
+
+                    <!-- ! Beskriv textarea-elementet -->
+                    <label for="contactText">Meddelande: </label><br>
+                    <textarea name="Meddelande" id="contactText"  placeholder="Skriv något..."></textarea>
+                    
+                    <!-- ! Beskriv skillanden på input här jämfört med de ovan -->
+                    <input type="submit" value="Skicka" class="fRight">
+                    <div class="clr"></div>
+                </form>               
+            </div>
+            <div class="clr"></div>
+        </section>
+    </div>
+    <footer><p> Mycket text och bilder är taget ifrån wikipedia, resten är &copy; Björn Bergqvist </p></footer>
+</body>
+</html>

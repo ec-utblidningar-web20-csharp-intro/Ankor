@@ -1,13 +1,25 @@
+html{
+    height: 100%;
+}
+
 body{
-    padding:0px;
-    margin: 0px;
+    /* ! Skriv en kommentar om vad margin och padding är, samt varför vi har satt dem till 0 här */
+    padding:0;
+    margin: 0;
+
+    /* ! Skriv en kommentar om varför vi har valt flera fonter här */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(220, 229, 247);
-    color: slategrey;
     font-size: 16px;
+    
+    /* ! Skriv en kommentar om vad som är skillanden på color och background-color */ 
+    color: slategrey;
+    background-color: rgb(220, 229, 247);
+    
+    height: 100%;
 }
 
 header {
+    /* ! Förklara vad de olika background-egenskaperna gör här */ 
     background-image: url("../img/clouds.jpg");
     background-position: center;
     background-attachment: fixed;
@@ -17,21 +29,29 @@ header {
     padding: 5%;
 }
 
+/* ! Skriv en kommentar som förklarar vad "header h1" refererar till */
 header h1{
     color: slategrey;
     text-transform: uppercase;
 }
 
 nav {
+    /* ! Förklara vad border-top och border-bottom gör här */ 
     border-top: solid 5px slategray;
     border-bottom: solid 5px slategray;
     margin-bottom: 20px;
     background-color: rgb(152, 174, 196);
+
+    /* ! Förklara vad sticky gör här */ 
     position: sticky;
-    top:0px;
+    top: 0;
+
+    /* ! Förklara vad z-index gör här */ 
+    z-index: 1;
 }
 
 nav ul{
+    /* ! Förklara vad list-style-type och overflow är och vad de gör här */ 
     list-style-type: none;
     overflow: hidden;
     padding: 0px;
@@ -41,58 +61,91 @@ nav ul{
 
 nav li{
     float: left;
-    padding: 0 5px;
+    padding: 0 0.5rem;
 }
 
 nav a{
     color: white;
 }
 
+/* ! Skriv en kommentar om vad ":" gör här */ 
 nav a:hover{
     color: slategray;
 }
 
+/* ! Skriv en kommentar om vad float gör här */ 
+.fRight{
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+.fLeft{
+    float: left;
+    margin: 0  5px  5px 0;
+}
+
+/* ! Skriv en kommentar om vad clear:both gör och varför man behöver använda det */ 
 .clr {
     clear:both;
 }
 
+/* ! Skriv en kommentar om de två egenskaperna som vi har ändrat på i a gör */
 a{
     font-weight: 800;
     text-decoration: none;
 }
 
-.contents{
+/* ! Skriv en kommentar om vad width, max-width och margin gör för här*/
+section{
     width: 80%;
-    margin: 0px auto;
-    margin-bottom: 100px;
+    margin: 0 auto;
 }
 
-.contents img{
+article img{
     width: 35%;
     max-width: 160px;
-    
 }
 
-#RubberDuckImg, #DuckImg{
-    float: right;
-    margin: 0 0 5px 5px;
+/* ! Skriv en kommentar som förklarar vad tecknet # gör här */
+#MainImg{
+    max-width: 100%;
+    border: solid 7px slategray;
+
+    /* ! Förklara vad border-radius gör här */ 
+    border-radius: 50%;
+}
+
+/* ! Den här CSSen gör så att t.ex. bilder flippas runt x-axeln. */ 
+.imgFlip{
     -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
-#CyberDuckImg{
-    float: left;
-    margin: 0  5px  5px 0;
-    
+/* ! Skriv en kommentar om vad klassen center gör */ 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.content{
+    /* Det här är här för att footern ska hamna längst ner */
+    min-height: 100%;
+    height: auto !important; /*min-height hack*/
+    height: 100%;            /*min-height hack*/
+    margin-bottom: 4em;      /*Negates #push on longer pages*/
+}
+
+.push{
+    /* Det här är här för att footern ska hamna längst ner */
+    height: 4em;
 }
 
 footer{
     border-top: solid 5px slategray;
     background-color: rgb(152, 174, 196);
-    clear: both;
-    position: relative;
-    height: 60px;
-    margin-top: -60px;
+    height: 4em;
 }
 
 footer p{
@@ -101,5 +154,90 @@ footer p{
     font-style: italic;
     color: white;
     font-size: 14px;
+}
+
+/* -- Här börjar CSS som rör mitt form -- */
+
+.contact{
+    margin: auto;
+    width: 60%;
+    align-items: center;
+    
+}
+
+/* ! Skriv en kommentar som förklara som händer när man skriver flera selektorer på samma rad som vi har gjort här */ 
+.contact input[type=text], .contact select, .contact textarea {
+    width: 100%; 
+    padding: 6px; 
+    border: 2px solid rgb(152, 174, 196);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    resize: vertical 
+}
+
+.contact textarea{
+    height: 8rem;
+}
+
+.contact input[type=submit] {
+    background-color:  rgb(152, 174, 196);
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.contact input[type=submit]:hover {
+    background-color: slategray
+}
+
+
+/* -- Här börjar CSS som rör mitt table -- */
+
+.info {
+    width: 60%;
+    min-width: 360px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.info table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+/* ! Skriv en kommentar som förklara vad nth-child(even) betyder */ 
+.info thead, .info tr:nth-child(even), .info tr:nth-child(even) a{
+    background: rgb(152, 174, 196);
+    color: white;
+}
+
+.infoLeft{
+    text-align: left;
+    padding-left: 6px;
+}
+
+.infoRight{
+    text-align: right;
+    padding-right: 6px;
+}
+
+.info a{
+    color: slategray;
+    font-weight: 400;
+}
+
+.info a:hover{
+    color: white;
+}
+
+.info tr:nth-child(even) a:hover{
+    color: slategray;
 }
 
