@@ -68,7 +68,7 @@ nav a{
     color: white;
 }
 
-/* ! Skriv en kommentar om vad ":" gör här */ 
+/* ! Skriv en kommentar om vad ":" (mellan a och hover) gör här */ 
 nav a:hover{
     color: slategray;
 }
@@ -95,7 +95,7 @@ a{
     text-decoration: none;
 }
 
-/* ! Skriv en kommentar om vad width, max-width och margin gör för här*/
+/* ! Skriv en kommentar om vad width, max-width och margin gör här*/
 section{
     width: 80%;
     margin: 0 auto;
@@ -115,7 +115,7 @@ article img{
     border-radius: 50%;
 }
 
-/* ! Den här CSSen gör så att t.ex. bilder flippas runt x-axeln. */ 
+/* Den här CSSen gör så att t.ex. bilder flippas runt x-axeln. */ 
 .imgFlip{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
